@@ -27,5 +27,6 @@ module.exports = function() {
     hook.data = Object.assign({}, hook.data, {
       image: gravatarImage(hook.data.email)
     });
+    console.log("gravatar hook: " + JSON.stringify(hook.data));
   };
 };
